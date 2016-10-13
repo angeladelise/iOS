@@ -22,78 +22,78 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //table view required methods
    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 8
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let mySection = indexPath.section
         
-        if indexPath.section == 0{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell")
-            myCell!.textLabel?.text = peopleEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+        if (indexPath as NSIndexPath).section == 0{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell")
+            myCell!.textLabel?.text = peopleEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
-        else if indexPath.section == 1{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell2")
-            myCell!.textLabel?.text = natureEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
-            myCell!.detailTextLabel?.text = "\(rowNum)"
-            return myCell!
-        }
-        
-        else if indexPath.section == 2{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell3")
-            myCell!.textLabel?.text = foodEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+        else if (indexPath as NSIndexPath).section == 1{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell2")
+            myCell!.textLabel?.text = natureEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
         
-        else if indexPath.section == 3{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell4")
-            myCell!.textLabel?.text = activityEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+        else if (indexPath as NSIndexPath).section == 2{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell3")
+            myCell!.textLabel?.text = foodEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
+            myCell!.detailTextLabel?.text = "\(rowNum)"
+            return myCell!
+        }
+        
+        else if (indexPath as NSIndexPath).section == 3{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell4")
+            myCell!.textLabel?.text = activityEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
             
-        else if indexPath.section == 4{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell5")
-            myCell!.textLabel?.text = travelEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+        else if (indexPath as NSIndexPath).section == 4{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell5")
+            myCell!.textLabel?.text = travelEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
             
-        else if indexPath.section == 5{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell6")
-            myCell!.textLabel?.text = objectEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+        else if (indexPath as NSIndexPath).section == 5{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell6")
+            myCell!.textLabel?.text = objectEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
         
-        else if indexPath.section == 6{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell7")
-            myCell!.textLabel?.text = symbolEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+        else if (indexPath as NSIndexPath).section == 6{
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell7")
+            myCell!.textLabel?.text = symbolEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
         
         else{
-            let myCell = tableView.dequeueReusableCellWithIdentifier("myCell8")
-            myCell!.textLabel?.text = flagEmoji[indexPath.row]
-            var rowNum = indexPath.row + 1
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell8")
+            myCell!.textLabel?.text = flagEmoji[(indexPath as NSIndexPath).row]
+            let rowNum = (indexPath as NSIndexPath).row + 1
             myCell!.detailTextLabel?.text = "\(rowNum)"
             return myCell!
         }
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
        // let mySection = section
         
@@ -123,12 +123,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         let myCGFloat = CGFloat(40)
         return myCGFloat
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         if section == 0{
             return "Smileys & People"

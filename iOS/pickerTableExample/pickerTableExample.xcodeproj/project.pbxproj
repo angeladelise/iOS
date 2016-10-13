@@ -97,6 +97,7 @@
 					0B09FD301D9D8BE500247FD4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YP89BTTY4D;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -259,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.delia914.pickerTableExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -273,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.delia914.pickerTableExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -295,6 +298,7 @@
 				0B09FD451D9D8BE500247FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

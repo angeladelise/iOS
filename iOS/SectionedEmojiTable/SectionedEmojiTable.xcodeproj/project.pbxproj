@@ -97,6 +97,7 @@
 					0B0610E31DA6C20B0037176B = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YP89BTTY4D;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -259,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.delia914.SectionedEmojiTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -273,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.delia914.SectionedEmojiTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -295,6 +298,7 @@
 				0B0610F81DA6C20B0037176B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

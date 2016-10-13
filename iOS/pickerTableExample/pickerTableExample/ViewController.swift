@@ -27,19 +27,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     //UIPickerView required Methods
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         //number of columns
         return 1
     }
     
     let foodArray = ["salt", "sugar", "cheese", "lemon", "hamburger", "pizza", "lettuce", "mayo"]
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         //number of rows
         return langCodeAll38.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         //item in food array is determined by row number
         //return foodArray[row]
         print("\(row)")
@@ -47,37 +47,37 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("You selected \(langCodeAll38[row].0)")
         language = langCodeAll38[row].0
     }
     
     //Table required Methods
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return emojis.count
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //create a cell type
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("mycell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell")!
         
-        cell.textLabel?.text = emojis[indexPath.row]
+        cell.textLabel?.text = emojis[(indexPath as NSIndexPath).row]
         cell.detailTextLabel?.text = ""
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected \(emojis[indexPath.row])")
-        let usersText = emojis[indexPath.row]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You selected \(emojis[(indexPath as NSIndexPath).row])")
+        let usersText = emojis[(indexPath as NSIndexPath).row]
         
         //call the next function to speak
         speakThisString(usersText)
 
     }
     
-    func speakThisString(passedString:String){
+    func speakThisString(_ passedString:String){
         print("passedString is: \(passedString)")
         
         //utterance is a type
@@ -85,7 +85,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         //to change language
         myUtterance.voice = AVSpeechSynthesisVoice(language: language)
-        mySpeechSynth.speakUtterance(myUtterance)
+        mySpeechSynth.speak(myUtterance)
     }
 
     
