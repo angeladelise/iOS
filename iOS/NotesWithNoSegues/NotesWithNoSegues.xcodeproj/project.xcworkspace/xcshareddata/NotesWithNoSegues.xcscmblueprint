@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A3814121F7A37E11007368337FFDE19ADD7F198F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FDCD23923FF2B5ECB4482DD24EFEBBD19AC1C921" : 9223372036854775807,
+    "A3814121F7A37E11007368337FFDE19ADD7F198F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DC6ACAA8-81EB-4ECB-B939-4853DEA6984C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FDCD23923FF2B5ECB4482DD24EFEBBD19AC1C921" : "..\/..",
+    "A3814121F7A37E11007368337FFDE19ADD7F198F" : "myApps\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NotesWithNoSegues",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/NotesWithNoSegues\/NotesWithNoSegues.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/angeladelise\/iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A3814121F7A37E11007368337FFDE19ADD7F198F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/angeladelise\/CCLab.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FDCD23923FF2B5ECB4482DD24EFEBBD19AC1C921"
+    }
+  ]
+}

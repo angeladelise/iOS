@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A3814121F7A37E11007368337FFDE19ADD7F198F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FDCD23923FF2B5ECB4482DD24EFEBBD19AC1C921" : 9223372036854775807,
+    "A3814121F7A37E11007368337FFDE19ADD7F198F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "752A7AE7-E892-4750-8A2D-40F97E0B1538",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FDCD23923FF2B5ECB4482DD24EFEBBD19AC1C921" : "..\/..",
+    "A3814121F7A37E11007368337FFDE19ADD7F198F" : "myApps\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PlainOleNotes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/PlainOleNotes-master\/PlainOleNotes.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/angeladelise\/iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A3814121F7A37E11007368337FFDE19ADD7F198F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/angeladelise\/CCLab.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FDCD23923FF2B5ECB4482DD24EFEBBD19AC1C921"
+    }
+  ]
+}
