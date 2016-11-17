@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					0B2BBE2E1DDBC27300595884 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YP89BTTY4D;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,7 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YP89BTTY4D;
 				INFOPLIST_FILE = "Gif Maker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delia914.Gif-Maker";
@@ -273,7 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YP89BTTY4D;
 				INFOPLIST_FILE = "Gif Maker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delia914.Gif-Maker";

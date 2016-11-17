@@ -9,16 +9,22 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,
+    UIImagePickerControllerDelegate,
+    UINavigationControllerDelegate
+{
+
 
     @IBOutlet weak var cameraView: UIView!
     
     var captureSession = AVCaptureSession()
-    var sessionOutput = AVCaptureStillImageOutput()
+    var sessionOutput = AVCapturePhotoOutput()
     var previewLayer = AVCaptureVideoPreviewLayer()
     
     override func viewWillAppear(_ animated: Bool) {
-        let devices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo)
+        let devices = AVCaptureDeviceDiscoverySession.init(deviceTypes: AVMediaType, mediaType: String!, position: <#T##AVCaptureDevicePosition#>)
+            
+            .devices(withMediaType: AVMediaTypeVideo)
         
         for device in devices! {
             if (device as AnyObject).position == AVCaptureDevicePosition.front{
@@ -28,7 +34,9 @@ class ViewController: UIViewController {
                     
                     if captureSession.canAddInput(input){
                         captureSession.addInput(input)
-                        sessionOutput.outputSettings = [AVVideoCodecKey: AVVideoCodecJPEG]
+                        sessionOutput.capturePhoto(with: AVVideoCodecKey, delegate: AVVideoCodecJPEG)
+                        
+                        //outputSettings = [AVVideoCodecKey: AVVideoCodecJPEG]
                         
                         if captureSession.canAddOutput(sessionOutput){
                             captureSession.addOutput(sessionOutput)
