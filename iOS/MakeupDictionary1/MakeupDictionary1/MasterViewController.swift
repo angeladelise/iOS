@@ -51,7 +51,7 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-               let object = terms[indexPath.row][1]
+               //let object = terms[indexPath.row][1]
                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 //says its an NSDate
                 //controller.detailItem = object
@@ -69,10 +69,28 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return terms.count
+        //return terms.count
         
         //break up into sections
         //the number of rows depends on the length of the array
+        
+        if section == 0{
+            return terms.count
+            
+        }
+            
+        else if section == 1{
+            return techniques.count
+        }
+            
+        else if section == 2{
+            return products.count
+        }
+            
+        else {
+            return tools.count
+        }
+
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -89,10 +107,27 @@ class MasterViewController: UITableViewController {
 
         else if indexPath.section == 1{
             //next array of information techniques
+            let object = techniques[indexPath.row][0]
+            cell.textLabel!.text = object.description
+            //detail of item in master view
+            cell.detailTextLabel?.text = techniques[indexPath.row][1]
+        }
+            
+        else if indexPath.section == 2{
+            //next array of information techniques
+            let object = products[indexPath.row][0]
+            cell.textLabel!.text = object.description
+            //detail of item in master view
+            cell.detailTextLabel?.text = products[indexPath.row][1]
         }
         
         else {
-            print("")
+            //next array of information techniques
+            let object = tools[indexPath.row][0]
+            cell.textLabel!.text = object.description
+            //detail of item in master view
+            cell.detailTextLabel?.text = tools[indexPath.row][1]
+
         }
         
 //        let object = objects[indexPath.row] as! NSDate
@@ -110,12 +145,37 @@ class MasterViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedRow = indexPath.row
+        
+        //if you selected a row that is in a particular section then the output should be 
+        //the terms in that arrays section
+        
+        print(sectionNumber, selectedRow)
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "myTitle"
+        //return "myTitle"
         
         //break area into sections depending on type of section
+        
+        if section == 0{
+            sectionNumber = 0
+            return "Terms"
+        }
+            
+        else if section == 1{
+            sectionNumber = 1
+            return "Techniques"
+        }
+            
+        else if section == 2{
+            sectionNumber = 2
+            return "Products"
+        }
+            
+        else {
+            sectionNumber = 3
+            return "Tools"
+        }
     }
 
 //    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

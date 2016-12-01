@@ -28,8 +28,24 @@ class DetailViewController: UIViewController {
         
         //have the description change dependingon the row of the item selected
         
-        detailDescriptionLabel.text = terms[selectedRow][1]
-        
+        detailDescriptionLabel.text = products[selectedRow][1]
+
+
+//        if section == 0{
+//        detailDescriptionLabel.text = terms[selectedRow][1]
+//        }
+//        
+//        else if section == 1 {
+//        detailDescriptionLabel.text = techniques[selectedRow][1]
+//        }
+//        
+//        else if selectedRow == 2{
+//        detailDescriptionLabel.text = products[selectedRow][1]
+//        }
+//            
+//        else{
+//        detailDescriptionLabel.text = tools[selectedRow][1]
+//        }
         
     }
 

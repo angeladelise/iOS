@@ -9,10 +9,27 @@
 import UIKit
 
 var selectedRow = 1;
+var sectionNumber = 0;
 
-var terms = [["Foundation", "A foundation is makeup that serves as a base"],
+var terms = [["Baking", "A foundation is makeup that serves as a base"],
+             ["Color Correcting", "provides more coverage in one area of the face"],
+             ["Fallout", "when eyeshadow falls on the face"]]
+
+var techniques = [["Oxidation", "A foundation is makeup that serves as a base"],
+             ["Flashback", "provides more coverage in one area of the face"],
+             ["Overlining", "is used to set the face"],
+            ["Baking", "placing access powder on the face"]]
+
+var products = [["Foundation", "A foundation is makeup that serves as a base"],
              ["Concealer", "provides more coverage in one area of the face"],
-             ["Powder", "is used to set the face"]]
+             ["Powder", "is used to set the face"],
+            ["Eyeshadow", "put on eyelids"],
+            ["Mascara", "is used to set the face"]]
+
+var tools = [["Beauty Blendr", "A foundation is makeup that serves as a base"],
+             ["Eyelash Curler", "provides more coverage in one area of the face"],
+             ["Lash Guard", "is used to set the face"],
+             ["Kabuki Brush", "is used to set the face"]]
 
 
 @UIApplicationMain
