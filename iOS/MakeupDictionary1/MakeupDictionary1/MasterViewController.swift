@@ -143,12 +143,15 @@ class MasterViewController: UITableViewController {
         return true
     }
     
+    
+        
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedRow = indexPath.row
         
         //if you selected a row that is in a particular section then the output should be 
         //the terms in that arrays section
         
+        //var sectionPath = NSIndexPath.index(ofAccessibilityElement: indexPath)
         print(sectionNumber, selectedRow)
     }
     
@@ -158,22 +161,22 @@ class MasterViewController: UITableViewController {
         //break area into sections depending on type of section
         
         if section == 0{
-            sectionNumber = 0
+            //sectionNumber = 0
             return "Terms"
         }
             
         else if section == 1{
-            sectionNumber = 1
+           // sectionNumber = 1
             return "Techniques"
         }
             
         else if section == 2{
-            sectionNumber = 2
+            //sectionNumber = 2
             return "Products"
         }
             
         else {
-            sectionNumber = 3
+           // sectionNumber = 3
             return "Tools"
         }
     }

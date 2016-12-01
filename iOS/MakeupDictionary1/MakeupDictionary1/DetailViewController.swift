@@ -12,12 +12,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-    var terms = [["Foundation", "A foundation is makeup that serves as a base"],
-                 ["Concealer", "provides more coverage in one area of the face"],
-                 ["Powder", "is used to set the face"]]
-    
-
-    
+        
     func configureView() {
         // Update the user interface for the detail item.
 //        if let detail = self.detailItem {
