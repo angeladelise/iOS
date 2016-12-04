@@ -11,20 +11,23 @@ import UIKit
 var selectedRow = 1;
 var sectionNumber = 0;
 
-var terms = [["Baking", "A foundation is makeup that serves as a base"],
-             ["Color Correcting", "provides more coverage in one area of the face"],
-             ["Fallout", "when eyeshadow falls on the face"]]
+var terms = [
+             ["Fallout", "when eyeshadow falls on the face"],
+             ["Oxidation", "A foundation is makeup that serves as a base"],
+             ["Flashback", "provides more coverage in one area of the face"]]
 
-var techniques = [["Oxidation", "A foundation is makeup that serves as a base"],
-             ["Flashback", "provides more coverage in one area of the face"],
+var techniques = [
+             ["Baking", "A foundation is makeup that serves as a base"],
+             ["Color Correcting", "provides more coverage in one area of the face"],
              ["Overlining", "is used to set the face"],
-            ["Baking", "placing access powder on the face"]]
+            ]
 
 var products = [["Foundation", "A foundation is makeup that serves as a base"],
              ["Concealer", "provides more coverage in one area of the face"],
              ["Powder", "is used to set the face"],
             ["Eyeshadow", "put on eyelids"],
-            ["Mascara", "is used to set the face"]]
+            ["Eyeliner", "Liquid, gel or pencil that is used to create sharp lines on the face. Typically placed above the eye to create a wing or cat eye effect."],
+            ["Mascara", "Tube of product typically sold in black and brown that is placed on the lashes to increase length and volume."]]
 
 var tools = [["Beauty Blendr", "A foundation is makeup that serves as a base"],
              ["Eyelash Curler", "provides more coverage in one area of the face"],

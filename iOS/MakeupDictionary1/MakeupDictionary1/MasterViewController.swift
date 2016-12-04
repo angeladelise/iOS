@@ -92,9 +92,11 @@ class MasterViewController: UITableViewController {
         }
 
     }
+    
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         
         
         if indexPath.section == 0{
@@ -146,7 +148,10 @@ class MasterViewController: UITableViewController {
     
         
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //get the row and section number of the selection!
+        
         selectedRow = indexPath.row
+        sectionNumber = indexPath.section
         
         //if you selected a row that is in a particular section then the output should be 
         //the terms in that arrays section
