@@ -12,14 +12,14 @@ var selectedRow = 1;
 var sectionNumber = 0;
 
 var terms = [
-             ["Fallout", "when eyeshadow falls on the face"],
-             ["Oxidation", "A foundation is makeup that serves as a base"],
-             ["Flashback", "provides more coverage in one area of the face"]]
+             ["Fallout", "when eyeshadow falls on the face", "foundation.jpg"],
+             ["Oxidation", "A foundation is makeup that serves as a base", "concealer.jpg"],
+             ["Flashback", "provides more coverage in one area of the face", "foundation.jpg"]]
 
 var techniques = [
-             ["Baking", "A foundation is makeup that serves as a base"],
-             ["Color Correcting", "provides more coverage in one area of the face"],
-             ["Overlining", "is used to set the face"],
+             ["Baking", "A foundation is makeup that serves as a base", "concealer.jpg"],
+             ["Color Correcting", "provides more coverage in one area of the face", "concealer.jpg"],
+             ["Overlining", "is used to set the face", "concealer.jpg"],
             ]
 
 var products = [["Foundation", "A foundation is makeup that serves as a base"],

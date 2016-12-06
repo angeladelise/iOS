@@ -13,6 +13,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
         
+    @IBOutlet weak var displayImage: UIImageView!
+    
+    
     func configureView() {
         // Update the user interface for the detail item.
 //        if let detail = self.detailItem {
@@ -28,10 +31,13 @@ class DetailViewController: UIViewController {
 
         if sectionNumber == 0{
         detailDescriptionLabel.text = terms[selectedRow][1]
+        displayImage.image = UIImage(named: terms[selectedRow][2])
         }
         
         else if sectionNumber == 1 {
         detailDescriptionLabel.text = techniques[selectedRow][1]
+       displayImage.image = UIImage(named: techniques[selectedRow][2])
+
         }
         
         else if sectionNumber == 2{
@@ -43,6 +49,9 @@ class DetailViewController: UIViewController {
         }
         
     }
+    
+  
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -61,6 +61,7 @@
                     <navigationItem key="navigationItem" title="Definition" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="displayImage" destination="0Kv-FZ-ejy" id="l3z-0z-tZL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
