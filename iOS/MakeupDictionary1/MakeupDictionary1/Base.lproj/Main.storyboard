@@ -56,22 +56,19 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnn-wc-Ath">
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="item1:" destination="JEX-9P-axG" eventType="touchUpInside" id="Y6l-gH-5rx"/>
                                             <action selector="item1pressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="SWj-3L-nCx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZI-tj-wCV">
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="item2:" destination="JEX-9P-axG" eventType="touchUpInside" id="lmM-CA-R8g"/>
                                             <action selector="item2pressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="E8v-n1-QM1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6E-n2-6dx">
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="item3:" destination="JEX-9P-axG" eventType="touchUpInside" id="sVy-wB-k2S"/>
-                                            <action selector="item3pressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="xCj-qy-shk"/>
+                                            <action selector="item3pressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="4fl-up-14v"/>
                                         </connections>
                                     </button>
                                 </subviews>

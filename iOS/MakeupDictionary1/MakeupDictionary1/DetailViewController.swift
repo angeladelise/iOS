@@ -88,6 +88,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        item1.addTarget(self, action: "item1pressed", for: .touchUpInside)
+        item2.addTarget(self, action: "item2pressed", for: .touchUpInside)
+        item3.addTarget(self, action: "item3pressed", for: .touchUpInside)
+
     }
 
     override func didReceiveMemoryWarning() {
