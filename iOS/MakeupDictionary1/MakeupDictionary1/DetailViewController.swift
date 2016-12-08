@@ -10,10 +10,31 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var header: UILabel!
+    
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
         
     @IBOutlet weak var displayImage: UIImageView!
+    
+    @IBOutlet weak var item1: UIButton!
+    
+    @IBOutlet weak var item2: UIButton!
+    @IBOutlet weak var item3: UIButton!
+    
+    @IBAction func item1pressed(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "http://www.stackoverflow.com")!)
+    
+    }
+    @IBAction func item2pressed(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "http://www.stackoverflow.com")!)
+
+    }
+    
+    @IBAction func item3pressed(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "http://www.stackoverflow.com")!)
+        
+    }
     
     
     func configureView() {
@@ -30,21 +51,31 @@ class DetailViewController: UIViewController {
 
 
         if sectionNumber == 0{
+        header.text = terms[selectedRow][0]
         detailDescriptionLabel.text = terms[selectedRow][1]
         displayImage.image = UIImage(named: terms[selectedRow][2])
+        item1.setTitle(terms[selectedRow][3], for: .normal)
+        item2.setTitle(terms[selectedRow][4], for: .normal)
+        item3.setTitle(terms[selectedRow][5], for: .normal)
         }
         
         else if sectionNumber == 1 {
+        header.text = techniques[selectedRow][0]
+
         detailDescriptionLabel.text = techniques[selectedRow][1]
        displayImage.image = UIImage(named: techniques[selectedRow][2])
 
         }
         
         else if sectionNumber == 2{
+        header.text = products[selectedRow][0]
+
         detailDescriptionLabel.text = products[selectedRow][1]
         }
             
         else {
+        header.text = tools[selectedRow][0]
+
         detailDescriptionLabel.text = tools[selectedRow][1]
         }
         

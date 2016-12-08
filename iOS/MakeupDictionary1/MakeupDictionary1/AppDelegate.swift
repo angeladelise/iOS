@@ -12,14 +12,19 @@ var selectedRow = 1;
 var sectionNumber = 0;
 
 var terms = [
-             ["Fallout", "when eyeshadow falls on the face", "foundation.jpg"],
-             ["Oxidation", "A foundation is makeup that serves as a base", "concealer.jpg"],
-             ["Flashback", "provides more coverage in one area of the face", "foundation.jpg"]]
+             ["Fallout", "When eyeshadow falls from the eye onto the undereye or cheek area. Typically occurs with powdery shadows and glitters. This can be prevented with an eyeshadow shield.", "foundation.jpg", "Elf", "Maybelline Smokey", "Urban Decay"],
+             ["Flashback", "When flash photography creates a white cast on the face. This is due to the pigments of a foundation or powder that contain SPF.", "foundation.jpg"],
+             ["Oxidation", "This occurs when a foundation color darkens after it is applied. Usually creating an orange and darker tint to the skin, when the liquid of the foundation react with the air.", "concealer.jpg"]
+             ]
 
 var techniques = [
-             ["Baking", "A foundation is makeup that serves as a base", "concealer.jpg"],
+             ["Baking", "A technique used to set the concealer of the undereye area by placing an excessive amount of translucent loose powder to the face. Place the powder onto the face for several minutes and then wipe it away with a powder brush.", "concealer.jpg"],
              ["Color Correcting", "provides more coverage in one area of the face", "concealer.jpg"],
+             ["Contouring", "is used to set the face", "concealer.jpg"],
+             ["Highlighting", "is used to set the face", "concealer.jpg"],
              ["Overlining", "is used to set the face", "concealer.jpg"],
+             ["Strobing", "is used to set the face", "concealer.jpg"],
+             ["Setting", "is used to set the face", "concealer.jpg"]
             ]
 
 var products = [["Foundation", "A foundation is makeup that serves as a base"],
@@ -27,7 +32,13 @@ var products = [["Foundation", "A foundation is makeup that serves as a base"],
              ["Powder", "is used to set the face"],
             ["Eyeshadow", "put on eyelids"],
             ["Eyeliner", "Liquid, gel or pencil that is used to create sharp lines on the face. Typically placed above the eye to create a wing or cat eye effect."],
-            ["Mascara", "Tube of product typically sold in black and brown that is placed on the lashes to increase length and volume."]]
+            ["Mascara", "Tube of product typically sold in black and brown that is placed on the lashes to increase length and volume."],
+            ["Eyeshadow", "put on eyelids", "foundation.jpg", "Maybelline Smokey", "Urban Decay", "Skin"],
+            ["Eyeshadow", "put on eyelids"],
+            ["Eyeshadow", "put on eyelids"],
+            ["Eyeshadow", "put on eyelids"],
+            ["Eyeshadow", "put on eyelids"],
+            ["Eyeshadow", "put on eyelids"]]
 
 var tools = [["Beauty Blendr", "A foundation is makeup that serves as a base"],
              ["Eyelash Curler", "provides more coverage in one area of the face"],
