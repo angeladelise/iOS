@@ -27,10 +27,15 @@ var terms = [
              ]
 
 var techniques = [
-             ["Baking", "A technique used to set the concealer of the undereye area by placing an excessive amount of translucent loose powder to the face. Place the powder onto the face for several minutes and then wipe it away with a powder brush.", "baking.jpg",
-              "Airspun Translucent Face Powder - $6", "https://www.walmart.com/ip/Coty-Airspun-Translucent-Extra-Coverage-Loose-Face-Powder/10312547",
-              "E.l.f. HD Translucent Powder - $6", "http://www.elfcosmetics.com/p/high-definition-powder",
-              "NYX Translucent Powder - $10", "http://www.ulta.com/studio-finishing-powder-translucent-finish?productId=xlsImpprod5050061"],
+             ["Baking",
+              "A technique used to set the concealer of the undereye area by placing an excessive amount of translucent loose powder to the face. Place the powder onto the face for several minutes and then wipe it away with a powder brush.",
+              "baking.jpg",
+              "Airspun Translucent Face Powder - $6",
+              "https://www.walmart.com/ip/Coty-Airspun-Translucent-Extra-Coverage-Loose-Face-Powder/10312547",
+              "E.l.f. HD Translucent Powder - $6",
+              "http://www.elfcosmetics.com/p/high-definition-powder",
+              "NYX Translucent Powder - $10",
+              "http://www.ulta.com/studio-finishing-powder-translucent-finish?productId=xlsImpprod5050061"],
              
              ["Color Correcting", "A technique used to hide imperfections of the face by using color theory. Colors opposite of one another on the color wheel counterbalance each other; therefore, to remove dark blue and purple under eye tones one can use a peach or orange toned concealer.", "colorcorrecting.jpg",
               "NYX Color Correcting Palette - $12", "http://www.ulta.com/color-correcting-concealer?productId=xlsImpprod12011171",
